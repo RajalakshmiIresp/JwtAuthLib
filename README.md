@@ -39,9 +39,10 @@ using JwtAuthLib;
 using JwtAuthLibrary;
 
 var builder = WebApplication.CreateBuilder(args);
+var logger = builder.Services.BuildServiceProvider().GetRequiredService<ILogger<Program>>();
 
 // Configure JWT authentication
-builder.Services.AddJwtAuthentication(builder.Configuration);
+builder.Services.AddJwtAuthentication(builder.Configuration, logger);
 
 // Build configuration
 var configuration = new ConfigurationBuilder()
