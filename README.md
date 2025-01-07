@@ -123,6 +123,3 @@ The `JwtExtension` class can decode tokens for validation or debugging purposes.
    Authorization: Bearer <your-token>
    ```
 4. Access protected endpoints to verify authentication.
-
-## Contributing
-Feel free to submit issues or pull requests to improve JWTAuthLib. Contributions are welcome!
